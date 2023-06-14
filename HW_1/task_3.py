@@ -1,3 +1,11 @@
+# 4. Программа загадывает число от 0 до 1000. Необходимо угадать число за 10 попыток. Программа должна подсказывать «больше» или «меньше» после каждой попытки.
+# Для генерации случайного числа используйте код:
+
+# from random import randint
+# num = randint(LOWER_LIMIT, UPPER_LIMIT)
+
+
+
 from random import randint
 
 LOWER_LIMIT = 0
@@ -15,7 +23,7 @@ for attempt in range(MAX_ATTEMPTS):
         continue
         
     if guess == num:
-        print(f"Поздравляю! Вы угадали число {num} за {attempt+1} попыток!")
+        print(f"Поздравляю! Вы угадали число {num} за {attempt + 1} попыток!")
         break
     elif guess < num:
         print("Загаданное число больше.")
